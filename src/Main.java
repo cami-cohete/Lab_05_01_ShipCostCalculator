@@ -17,9 +17,10 @@ public class Main {
         double itemCost = 0;
         double shippingCost = 0;
         final double SHIPPING_FEE = 0.02;
-        double totalCost; 0
+        double totalCost = 0;
+
         System.out.println("Enter the price of your item: ");
-        itemCost = 75; // user input
+        itemCost = 100; // user input
         System.out.println("The simulated cost of the item is $" + itemCost);
 
         if (itemCost >= 100)
@@ -31,6 +32,7 @@ public class Main {
             shippingCost = itemCost * SHIPPING_FEE;
             System.out.println("Your cost for shipping is $" + shippingCost);
         }
+
         totalCost = shippingCost + itemCost;
         System.out.println("The total cost of your purchase is $" + totalCost);
     }
